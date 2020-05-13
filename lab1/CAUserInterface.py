@@ -28,7 +28,7 @@ label1 = tkinter.Label(window, text=" Rule ").grid(row=1, column=0)
 spin = tkinter.Spinbox(window, from_=0, to=255, width=5)
 spin.grid(row=1, column=1)
 
-label2 = tkinter.Label(window, text=" Grid size ").grid(row=1, column=2)  # work in progress
+label2 = tkinter.Label(window, text=" Grid size ").grid(row=1, column=2)
 entr1 = Entry(window, width=10)
 entr1.grid(row=1, column=3)
 grid = entr1.get()

@@ -15,12 +15,10 @@ class CellularAutomata1D(object):
                 previous_neighbor = len(self.init_space) - 1  # periodic boundary condition
             else:
                 previous_neighbor = i - 1
-
             if i == len(self.init_space) - 1:  # same as above
                 next_neighbor = 0
             else:
                 next_neighbor = i + 1
-
             neighborhood = [self.init_space[previous_neighbor], self.init_space[i], self.init_space[next_neighbor]]
             for j in range(0, len(self.ruleset)):
                 if tuple(neighborhood) == self.ruleset[j]:
